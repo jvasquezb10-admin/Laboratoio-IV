@@ -1,20 +1,20 @@
-package Ejercicicio04_SistemaDeBiblioteca;
+package Ejercicio04_SistemaDeBiblioteca;
 
-public class Libro extends Material {
+public class Revista extends Material {
 
-    private String autor;
+    private String editorial;
     private boolean disponible;
 
-    public Libro(String titulo, String autor, boolean disponible) {
+    public Revista(String titulo, String editorial, boolean disponible) {
         super(titulo);
-        this.autor = autor;
+        this.editorial = editorial;
         this.disponible = disponible;
     }
 
     @Override
     public void mostrarInformacion() {
         System.out.println("Título: " + titulo);
-        System.out.println("Autor: " + autor);
+        System.out.println("Editorial: " + editorial);
     }
 
     @Override
@@ -22,5 +22,4 @@ public class Libro extends Material {
         return disponible;
     }
     
-
 }

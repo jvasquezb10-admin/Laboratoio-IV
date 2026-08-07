@@ -1,4 +1,4 @@
-package Ejercicicio04_SistemaDeBiblioteca;
+package Ejercicio04_SistemaDeBiblioteca;
 
 public abstract class Material {
 
