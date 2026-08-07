@@ -1,0 +1,13 @@
+@startuml Diagrama de Secuencia
+title Registro de Usuario
+
+actor Usuario
+participant Sistema
+participant Estudiante
+
+Usuario -> Sistema : consultarEstudiante()
+Sistema -> Estudiante : obtenerDatos()
+Estudiante --> Sistema : datosEstudiante
+Sistema --> Usuario : mostrarDatos()
+
+@enduml
